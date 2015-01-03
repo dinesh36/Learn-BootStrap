@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.2Partition').hide();
+  $('.3Partition').hide();
+  $('.4Partition').hide();
+  $('.6Partition').hide();
+  $('.12Partition').hide();
+});
+</script>
+<script type="text/javascript">
+  function showThings(part){
+    switch(part){ 
+      case 2 :
+        $('.2Partition').show();
+        break;
+      case 3 :
+        $('.3Partition').show();
+        break;
+      case 4 :
+        $('.4Partition').show();
+        break;
+      case 6 :
+        $('.6Partition').show();
+        break;
+      case 12 :
+        $('.12Partition').show();
+        break;
+    }
+  }
+</script>
+<style type="text/css">
+  .green{
+    background: rgb(67, 162, 67);
+  }
+  .blue{
+    background: rgb(136, 136, 243); 
+  }
+  .yellow{
+    background: rgb(175, 175, 18);    
+  }
+  .orange{
+    background: rgb(211, 160, 67);      
+  }
+  .red{
+    background: rgb(199, 88, 88);
+  }
+  [class*="col-"] {
+    border:1px solid white;
+    min-height: 100px;
+    color:white;
+    font-weight: bold;
+    font-size: 50px
+  }
+  .twelve [class*="col-"] {
+    font-size: 12px
+  }
+</style>
+</head>
+<body>
+<h3>Offset</h3>
+<h3 onclick="showThings(6)">Space of 2 columns</h3>
+<div class='container-fluid 6Partition'>
+  <div class="row">
+    <div class="col-xs-offset-6 col-xs-6 red">
+      1
+    </div>
+  </div>
+  <div class="row">
+    <h3 onclick="showThings(4)">Space before and after</h3>
+  </div>   
+ </div>
+ <div class='container-fluid 4Partition'>
+  <div class="row">
+    <div class="col-xs-offset-3 col-xs-6 green">
+      1
+    </div>
+  </div>
+  <div class="row">
+    <button class='btn btn-normal' onclick="window.open('./Nesting.html','_self')">Next</button>
+  </div> 
+ </div>
+</body>
+</html>

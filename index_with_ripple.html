@@ -1,0 +1,194 @@
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- If you want to use the buttons on the bootstrap -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- rippler CSS -->
+
+<link rel="stylesheet" href="js/rippler-master/dist/css/rippler.min.css">
+
+<!-- vendor js -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- rippler js -->
+<script src="js/rippler-master/dist/js/jquery.rippler.min.js"></script>	
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.2Partition').hide();
+  $('.3Partition').hide();
+  $('.4Partition').hide();
+  $('.6Partition').hide();
+  $('.12Partition').hide();
+  $(".rippler").rippler({
+    effectClass      :  'rippler-effect'
+    ,effectSize      :  16      // Default size (width & height)
+    ,addElement      :  'div'   // e.g. 'svg'(feature)
+    ,duration        :  600
+  });
+});
+</script>
+<script type="text/javascript">
+	function showThings(part){
+		switch(part){
+			case 2 :
+				$('.2Partition').show();
+				break;
+			case 3 :
+				$('.3Partition').show();
+				break;
+			case 4 :
+				$('.4Partition').show();
+				break;
+			case 6 :
+				$('.6Partition').show();
+				break;
+			case 12 :
+				$('.12Partition').show();
+				break;
+		}
+	}
+</script>
+<style type="text/css">
+	.green{
+		background: rgb(67, 162, 67);
+	}
+	.blue{
+		background: rgb(136, 136, 243);	
+	}
+	.yellow{
+		background: rgb(175, 175, 18);		
+	}
+	.orange{
+		background: rgb(211, 160, 67);			
+	}
+	.red{
+		background: rgb(199, 88, 88);
+	}
+	[class*="col-"] {
+		border:1px solid white;
+		min-height: 100px;
+		color:white;
+		font-weight: bold;
+		font-size: 50px
+	}
+	.twelve [class*="col-"] {
+		font-size: 12px
+	}
+</style>
+</head>
+<body>
+<h3>Partition</h3>
+<h3 onclick="showThings(2)">Two partition</h3>
+  <div class='container-fluid 2Partition'>
+  <div class="row">
+  	<div class="col-xs-6 rippler rippler-default green">
+  		1
+  	</div>
+  	<div class="col-xs-6 rippler rippler-default green">
+  		2
+  	</div>
+  	<h3 onclick="showThings(3)">Three Partitions</h3>
+  </div>
+ </div>
+<div class='container-fluid 3Partition' >
+  <div class="row">
+  	<div class="col-xs-4 rippler rippler-default blue">
+  		1
+  	</div>
+  	<div class="col-xs-4 rippler rippler-default blue">
+  		2
+  	</div>
+  	<div class="col-xs-4 rippler rippler-default blue">
+  		3
+  	</div>
+  	<h3  onclick="showThings(4)">Four Partitions</h3>
+  </div>
+</div>
+
+<div class='container-fluid 4Partition'>
+  <div class="row">
+  	<div class="col-xs-3 rippler rippler-default yellow">
+  		1
+  	</div>
+  	<div class="col-xs-3 rippler rippler-default yellow">
+  		2
+  	</div>
+  	<div class="col-xs-3 rippler rippler-default yellow">
+  		3
+  	</div>
+  	<div class="col-xs-3 rippler rippler-default yellow">
+  		4
+  	</div>
+  	<h3  onclick="showThings(6)">Six Partitions</h3>
+  </div>
+</div>
+
+<div class='container-fluid 6Partition'>
+  <div class="row">
+  	<div class="col-xs-2 rippler rippler-default red">
+  		1
+  	</div>
+  	<div class="col-xs-2 rippler rippler-default red">
+  		2
+  	</div>
+  	<div class="col-xs-2 rippler rippler-default red">
+  		3
+  	</div>
+  	<div class="col-xs-2 rippler rippler-default red">
+  		4
+  	</div>
+  	<div class="col-xs-2 rippler rippler-default red">
+  		5
+  	</div>
+  	<div class="col-xs-2 rippler rippler-default red">
+  		6
+  	</div>
+  	<h3 onclick="showThings(12)">Twelve Partitions</h3>
+  </div>
+</div>
+
+<div class='container-fluid twelve 12Partition'>
+  <div class="row">
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		1
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		2
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		3
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		4
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		5
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		6
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		7
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		8
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		9
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		10
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		11
+  	</div>
+  	<div class="col-xs-1 rippler rippler-default orange">
+  		12
+  	</div>
+  </div>
+</div>
+<button class='btn btn-normal'>Next</button>
+</body>
+</html>

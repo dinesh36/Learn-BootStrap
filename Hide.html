@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<h1>Hide Or SHow Contents</h1>
+<h3 onclick="showThings(6)">Hide Contents</h3>
+<div class='container-fluid 6Partition'>
+  <div class="row">
+    <div class="col-xs-12 hidden-xs red">
+        Mobile
+    </div>
+    <div class="col-xs-12 hidden-sm green">
+        Tablets
+    </div>
+    <div class="col-xs-12 hidden-md blue">
+        Medium
+    </div>
+    <div class="col-xs-12 hidden-lg yellow">
+        Large
+    </div>
+  </div>
+  <div class="row">
+    <h3 onclick="showThings(4)">Show Contents</h3>
+  </div>   
+ </div>
+ </div>
+ <div class='container-fluid 4Partition'>
+  <div class="row">
+    <div class="col-xs-12 visible-xs-block red">
+        Mobile
+    </div>
+    <div class="col-xs-12 visible-sm-block green">
+        Tablets
+    </div>
+    <div class="col-xs-12 visible-md-block blue">
+        Medium
+    </div>
+    <div class="col-xs-12 visible-lg-block yellow">
+        Large
+    </div>
+  </div>
+  <div class="row">
+    <button class='btn btn-normal' onclick="window.open('./BootStrapComponents.html','_self')">Next</button>
+  </div>   
+ </div>
+ </div>
+</body>
+</html>

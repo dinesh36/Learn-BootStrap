@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/index.js"></script>
+<link rel="stylesheet" href="css/index.css">
+<style type="text/css">
+.img-circle{
+  height: 199px;
+  width: 200px;
+}
+[class*="col-"] {
+    padding-top:15px;
+    padding-bottom:15px;
+    border:0px;
+    font-size: 13px;
+}
+
+
+/*.dd[class*="col-xs"] {*/
+[class*="col-xs"] {
+    height: 300px;
+    background-repeat: no-repeat;
+}
+background-size: cover;
+height: 300px;
+h1{
+  color:white;
+  box-shadow: 0px 3px 3px -1px rgba(255, 255, 255, 0.5);
+}
+body{
+  background-color:#ef6c00;
+}
+.red{
+  margin: 10px;
+  background-color:#ef6c00;
+}
+.bottom{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background: rgba(255,255,255,0.6);
+    color: rgb(57, 56, 56);
+    text-align: center;
+    font-size: 40px;
+}
+</style>
+<script type="text/javascript">
+  $(function(){
+    var data = [
+                {name:'Michel Jection',img:'http://ewmusicmix.files.wordpress.com/2009/06/6a00d8341bf6c153ef01157165155f970b-800wi.jpg'},
+                {name:'Justin Biber',img:'http://img.allw.mn/content/www/2010/05/7-pop-albums-you-should-own/justin-bieber-my-world_pop-albums-you-should-own.jpg'},
+                {name:'Adele',img:'http://timbretantrum.com/wp-content/uploads/2010/12/Adele-21-cover-art-300x300.jpg'},
+                {name:'Chriss Brown',img:'http://i2.cdnds.net/12/09/618x618/music_chris_brown_fortune.jpg'},
+                {name:'Taylor Swift',img:'http://cloud.missoandfriends.com/images-scoop/uploaded_images/1402935436_taylor-swift-new-album-2014_lg.jpg'},                
+                {name:'Michel Jection',img:'http://images.contactmusic.com/images/feature-images/michael-jackson-xscape-cover-slice-636-380.jpg'},
+                {name:'Michel Jection',img:'http://images.contactmusic.com/images/feature-images/michael-jackson-xscape-cover-slice-636-380.jpg'},
+                {name:'Pitbull',img:'http://upload.wikimedia.org/wikipedia/en/4/4c/Pitbull_i_know_you_want_me_cover.jpg'},                
+                {name:'Akon',img:'http://2.bp.blogspot.com/-TV9WofcJcgc/TwgqjwCkkiI/AAAAAAAAA7E/21dUmJgtI20/s1600/Akon+-+Get+High+Lyrics.jpg'},                
+    ]
+    for(i=0;i<data.length;i++){
+      // $('.container-fluid .row').append('<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 red" style="background:url('+data[i].img+');background-size:cover" >'+
+      //         '<div class="row"><div class="col-xs-12">'+data[i].name+'</div></div>'+
+      //                                   '</div>');
+    }
+  });
+</script>
+</head>
+<body>
+<h1>Listen Now</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 dd">
+      <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 red" style="background:url(http://2.bp.blogspot.com/-TV9WofcJcgc/TwgqjwCkkiI/AAAAAAAAA7E/21dUmJgtI20/s1600/Akon+-+Get+High+Lyrics.jpg);background-size: auto 100%;background-repeat: no-repeat;background-position: center;" >
+          <div class='bottom'>Name</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

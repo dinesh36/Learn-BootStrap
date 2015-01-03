@@ -1,0 +1,28 @@
+ .green{
+    background: rgb(67, 162, 67);
+  }
+  .blue{
+    background: rgb(136, 136, 243); 
+  }
+  .yellow{
+    background: rgb(175, 175, 18);    
+  }
+  .orange{
+    background: rgb(211, 160, 67);      
+  }
+  .red{
+    background: rgb(199, 88, 88);
+  }
+  .inner .red{
+    border: 8px solid rgb(136, 136, 243);
+  }
+  [class*="col-"] {
+    border: 8px solid rgb(225, 215, 128);
+    min-height: 100px;
+    color:white;
+    font-weight: bold;
+    font-size: 50px
+  }
+  .twelve [class*="col-"] {
+    font-size: 12px
+  }
